@@ -19,7 +19,7 @@ Installation
 
 Clone this repository:
 
-git clone https://github.com/your-username/your-project-name.git
+git clone https://github.com/elvinhuseynov/Qencode-login.git
 
 Install dependencies:
 
