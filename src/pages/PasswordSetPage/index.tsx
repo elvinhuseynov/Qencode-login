@@ -123,7 +123,7 @@ export const PasswordSetPage = () => {
                   id="confirmPassword"
                   showPassword={showPassword}
                   onToggleShowPassword={setShowPassword.toggle}
-                  placeholder="Confirm Password"
+                  placeholder="Password"
                   type={showPassword ? "text" : "password"}
                   isInvalid={!!errors.confirmPassword}
                   borderColor={
