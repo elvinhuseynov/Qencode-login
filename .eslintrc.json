@@ -1,0 +1,91 @@
+{
+  "root": true,
+  "env": { "browser": true, "es2020": true },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+  "ignorePatterns": ["dist", ".eslintrc.json"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "react",
+    "react-hooks",
+    "react-refresh",
+    "@typescript-eslint",
+    "import",
+    "jsx-a11y"
+  ],
+  "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/prop-types": "off",
+    "no-unused-vars": "warn",
+    "no-console": "off",
+    "eqeqeq": "error",
+    "semi": ["error", "always"],
+    "quotes": ["error", "double"],
+    "react-refresh/only-export-components": [
+      "warn",
+      { "allowConstantExport": true }
+    ],
+    "class-methods-use-this": "off",
+    "import/prefer-default-export": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/require-default-props": "off",
+    "no-restricted-exports": "off",
+    "react/no-unstable-nested-components": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-uses-react": "off",
+    "arrow-body-style": ["error", "as-needed"],
+    "prefer-const": "error",
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "format": ["UPPER_CASE"],
+        "selector": "enum"
+      }
+    ],
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index"
+        ],
+        "pathGroups": [
+          {
+            "pattern": "react",
+            "group": "external",
+            "position": "before"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": ["react"],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ],
+    "react/jsx-filename-extension": [
+      "warn",
+      { "extensions": [".jsx", ".tsx"] }
+    ],
+    "react/jsx-curly-brace-presence": [
+      "error",
+      { "props": "never", "children": "never" }
+    ],
+    "import/no-duplicates": "error",
+    "jsx-a11y/alt-text": "warn",
+    "padding-line-between-statements": [
+      "error",
+      { "blankLine": "always", "prev": "*", "next": "return" },
+      { "blankLine": "always", "prev": "return", "next": "*" }
+    ]
+  }
+}
