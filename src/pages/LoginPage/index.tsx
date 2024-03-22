@@ -30,7 +30,7 @@ interface LoginForm {
   password: string;
 }
 
-const validationSchema = yup.object({
+const validationSchema: yup.ObjectSchema<LoginForm> = yup.object({
   email: yup
     .string()
     .email("Invalid email format")
@@ -159,7 +159,7 @@ export const LoginPage = () => {
             </Flex>
           </Flex>
           <Flex justifyContent="flex-end">
-            <Link to='/forgot-password'>
+            <Link to="/forgot-password">
               <Button
                 w="fit-content"
                 border="none"

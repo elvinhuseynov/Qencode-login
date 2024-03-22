@@ -19,7 +19,7 @@ interface ForgotPasswordForm {
   email: string;
 }
 
-const validationSchema = yup.object({
+const validationSchema: yup.ObjectSchema<ForgotPasswordForm> = yup.object({
   email: yup
     .string()
     .email("Invalid email format")

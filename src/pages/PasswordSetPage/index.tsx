@@ -19,7 +19,7 @@ interface PasswordSetForm {
   confirmPassword: string;
 }
 
-const validationSchema = yup.object({
+const validationSchema: yup.ObjectSchema<PasswordSetForm> = yup.object({
   password: yup
     .string()
     .min(8, "Password must be at least 8 characters")
